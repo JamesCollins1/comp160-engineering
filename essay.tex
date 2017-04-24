@@ -11,35 +11,47 @@
 \usepackage{amsmath}
 
 % Please include a clear, concise, and descriptive title
-\title{Your Title Here}
+\title{Is the Extra Cost, Time and Manpower usage worth the benefits of Software Localisation within the Mobile games industry: A brief outline of localisation methods and their benefits}
 
 % Please do not change the subtitle
 \subtitle{COMP160 - Software Engineering Essay}
 
 % Please put your student number in the author field
-\author{DO NOT WRITE YOUR NAME\\Put your student number (on your ID card) here}
+\author{1605629}
 
 \begin{document}
 
 \maketitle
 
-\abstract{Please include an abstract of at most 100 words (these do not count towards your word count).}
+\abstract{The target market for many modern app games can cover many different countries, not all of which speak the same language as the studio which made the game. This can prove to be a problem as the game may not sell as well in those countries as expected. This is where software localisation comes in. Software localisation is a method by which the software, or games company, will adjust many things within the software to fit with the social and cultural norms of a country. This paper goes into detail about whether this localisation is worth it for mobile games companies that may not have the funds to effectively localise their product through traditional means. }
 
 \section{Introduction}
 
-Write your introduction here. A brief introduction is recommended, which should outline key details of the chosen topic and the reviewed papers, motivate the work, and provide a roadmap of key points to the reader. The motivation is quite important here, as essays should have a contribution (i.e., what is the point of the essay, and what does the reader take away from the essay) and the link between the motivation (in the introduction) and the contribution (in the conclusion) should be made clear.
+In the software market of today, many companies target market spans multiple countries and cultures. This can meant hat their software may not sell as well in countries of different cultures, or that speak different languages to the software's country of origin. However, Software localisation can negate these problems. Software localisation covers many different methods, from giving multiple language options, to removing content that may be seen as offensive to different cultures. This can have a massive positive effect on sales of the software worldwide. This means many people may assume that software localisation is a necessity for any software company to achieve their maximum sales, but localisation for smaller mobile games companies, which have smaller employee base and funding, may be unattainable. In this paper I will go through different localisation methods, their benefits and drawbacks and how they may be achieved by mobile games companies to aid in the sale of their games worldwide.
 
-\section{Your section title here}
+\section{Replacing Hard-Coded Strings}
+It is known that if many different languages are maintained then there are many more innovative solutions tat are created than if just a few languages were maintained within software \cite {yeo1996software}. One of the most important things that need to be localised within any game is the User Interface (UI). This is because it holds the most text within the game. Most text within UI is hard coded in strings. A good way to localise a game, which means the source code only has to be modified once, is to replace all these hardcoded strings with variables. These variables then link to an external data file that maps the variables to their values. This can even work for languages that have more complicated characters and words, such as Hindi, as they can be stored in a Unicode format \cite {tomar2014software}. Each different language only requires one different data file \cite {xia2013software} which can be selected through a panel in the Options UI, or during config. This method is very effective for small mobile games, as they may not have many hard coded strings but also, they can localise for many different languages with relative ease. This method reduces both the time and cost of localisationfor mobile games companies.
 
-Write the main body of your essay here. Add more sections if appropriate. You may choose to write about each of your three papers in its own section, or you may choose a different structure. Either way, remember that you are being assessed on technical insight and analysis: it is not enough to merely summarise the contents of the three papers. You must demonstrate the ability to make inferences beyond what is written in the papers, and to draw the three papers together into a single coherent narrative.
+\section{Translation Memory}
 
-Your essay must make a clear recommendation, in terms of which of the three techniques you have reviewed is the best according to whichever metric or metrics you feel is most appropriate. You must justify your choice, backing it up with empirical evidence. However remember that an academic essay is not a murder mystery: you should already have briefly discussed your recommendation in the introduction and in other parts of the essay. Do not save it for a grand reveal at the end.
+Another invaluable tool for small mobile games companies is to use translation memory in tandem with a translator when creating their game. They have the most effect when the code includes a large amount of hard coded strings. A Translation Memory (TM) is a type of computer-aided translation tool which stores previously translated texts alongside their corresponding source texts and allows translators to 'recycle' or re-use these texts, or parts of them, in new translations \cite {sviridova2009software}. Using TM has several benefits, thats can eliminate much of the cost of localistion for smaller companies. One such benefit that I feel is critical for smaller mobile games companies is the fact that existing translation memory can be used in future similar projects.\cite {sviridova2009software}. This is due to the small size and similarity of each app game they create. It means they will quickly gather a lot of translation memory that can be transferred from project to project.
+
+\section{Localisation Testing}
+Another critical part of localisation that can also often be one of the most expensive sections, both in terms of financial cost and in terms of time, is that of testing your localisation. It is highly beneficial to tect 'in-country' as many different cultural factors, sucha s the emaning of colours, require up to date knowledge \cite {collins2002software}. There are three main models for testing localisation \cite {zhao2010study}, each with their own benefits and drawbacks depending on the situation.
+\subsection{The Integrated Testing Model}
+This requires the testers to somplete three different tests \cite {zhao2010study}. The first is a functionality test. the second is the UI test, where specifically the UI localisation is tested, involving the translation of the text and whether the layout is suited to the culture viewing it. For example, in the Middle East it could be more effective to put important text on the right of the screen, as they read from right to left. The third test is checking the overall quality of the translated language. This method can be very effective when the tested language is the tester's native language.
+\subsection{The One-Plus-One testing Method}
+This requires one tester or group of testers to work directly with one language, or localisation staff member or ggroup of staff members to implement the same tests as the integrated testing model. the downside of this is that it requires a lot more time, as there must be more communication between testers and staff. It does, however, mean that multiple languages can be tested at the same time.
+\subsection{Distribution Testing Model}
+The third, and in my opinion, most effective for mobile games companies, is the Distribution testing model. This model divides the contents in chronilogical order and theen arranges testers with different skills to execute the three tests seperately. This model is most efffectively used when multiple languages must be tested at the same time. More importantly for mobile games companies, the fact that multiple languages can be tested mean that less investment must be put into the total testing phase. I feel that this method best fits the rapid production and low budget setting of the mobile games industry.
+
 
 \section{Conclusion}
 
-Write your conclusion here. The conclusion should do more than summarise the essay, making clear the contribution of the work and highlighting key points, limitations, and outstanding questions. It should not introduce any new content or information.
+This paper has put forward many different, cost effective methods for mobile game localisation. This means that I feel like it is worth it for small mobile games companies to localisa their games as it broadens their target maket massively while, if the above methods are used, limiting the amount of investment needed. A game could be well localised using the above methods, but further projects would benefit massively from technology like TM, that mean the investment for localisation will just keep decreasing for the company.
 
-\bibliographystyle{ieeetran}
 \bibliography{references}
+\bibliographystyle{ieeetran}
+
 
 \end{document}
